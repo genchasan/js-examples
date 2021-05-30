@@ -9,10 +9,13 @@ var translationMap = {
 
 function translate(sentence) {
     if ((typeof sentence) == "string") {
+        return sentence.split(" ").map(it => translationMap[it] || it).join(" ");
+/*
         return sentence.split(" ").map(function (it) {
             let ret = translationMap[it];
             return ret || it ;
         }).join(" ");
+*/
     }
     else {
         throw Error("Sadece string");
