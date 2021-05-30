@@ -11,7 +11,7 @@ function translate(sentence) {
     if ((typeof sentence) == "string") {
         return sentence.split(" ").map(function (it) {
             let ret = translationMap[it];
-            return ret == undefined ? it : ret
+            return ret || it ;
         }).join(" ");
     }
     else {
@@ -22,7 +22,7 @@ function translate(sentence) {
 // Test input
 let translation = translate("hello merry christmas year hello");
 console.log(translation)
-console.log(typeof 5)
+//console.log(typeof 5)
 //let errtest = translate(5);
 
 // Expected output :
