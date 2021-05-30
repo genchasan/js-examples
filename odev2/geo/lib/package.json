@@ -1,0 +1,12 @@
+{
+  "name": "geo-tools",
+  "version": "1.0.0",
+  "description": "Geometric calculate tool",
+  "main": "geo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hasan Genc",
+  "license": "MIT",
+  "type": "module"
+}
